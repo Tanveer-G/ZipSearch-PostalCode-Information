@@ -48,9 +48,9 @@ const SearchBar = () => {
       handleSearchClick()
     }
   }
-  const handleFocus = () => {
-    setIsFocused(false)
-  }
+  // const handleFocus = () => {
+  //   setIsFocused(false)
+  // }
   const handleSelectHistory = (historyItem) => {
     setInput(historyItem)
     setTimeout(() => {
@@ -61,6 +61,11 @@ const SearchBar = () => {
   const handleValidate = () => {
     setIsInValid(false)
   }
+
+  const handleFocus = (value) => {
+    setIsFocused(value)
+  }
+
   const isInvalidInput = input.length > 0 && !postalCodeRegex.test(input)
 
   return (
@@ -77,7 +82,7 @@ const SearchBar = () => {
             isInvalidInput={isInvalidInput}
             input={input}
           />
-          <SearchButton isInvalidInput={isInvalidInput} handleSearchClick={handleSearchClick} handleValidate={handleValidate} />
+          <SearchButton isInvalidInput={isInvalidInput} handleSearchClick={handleSearchClick} />
         </div>
       </div>
       {isFocused && <History onSelectHistory={handleSelectHistory} />}

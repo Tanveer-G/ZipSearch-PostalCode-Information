@@ -12,7 +12,6 @@ export default function History({ onSelectHistory }) {
             onMouseDown={() => onSelectHistory(historyItem)}
             className='flex items-center hover:bg-[#E6E7E8]/30 ml-1.5 text-left text-white text-3xl font-semibold py-3 rounded-lg border border-x-transparent border-t-transparent border-b-white/50 cursor-pointer'
           >
-            {/* &#128339;  */}
             <img src={ClockIcon} alt={'clock icon for showing History'} width={18} height={18} className='mr-2' />
             <span>{historyItem}</span>
           </li>

@@ -1,5 +1,3 @@
-Sure, here's an improved version of the README:
-
 # Tanveer's ZipSearch: The Ultimate Postal Code Information App
 
 Welcome to ZipSearch! Developed by Tanveer H., this application redefines your interaction with postal codes. More than just a tool, it offers a streamlined and interactive experience, providing easy access to global postal code data via the https://api.zippopotam.us API.

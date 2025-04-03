@@ -1,19 +1,14 @@
-import { ReactCountryFlag } from 'react-country-flag'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
+import { CircleFlag } from 'react-circle-flags'
 
 const CountryFlag = () => {
   const { countryCode, countryName } = useSelector((state) => state.zipsearch)
 
   return (
-    <div className={` rounded-t-2xl bg-[#020024]/90`}>
-      <ReactCountryFlag
-        className='rounded-3xl'
-        countryCode={countryCode}
-        svg
-        style={{
-          width: '10.9rem',
-          height: '10rem'
-        }}
+    <div className="w-16 h-16 flex tex-center items-center justify-center rounded-full overflow-hidden bg-silver-gradient p-0.5">
+      <CircleFlag 
+        countryCode={countryCode.toLowerCase()} // countryCode should be in lowercase
+        style={{ width: '100%', height: '100%' }}
         title={countryName}
         aria-label={`${countryName} Flag`}
       />

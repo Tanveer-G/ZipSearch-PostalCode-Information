@@ -42,9 +42,9 @@ export default function Modal({ title, onClose, onOk, children, showModal }) {
                         <div className="flex justify-end mt-8">
                             <button
                                 onClick={clickOk}
-                                className="hover:bg-white/20 active:bg-silver-gradient active:opacity-50 font-semibold py-0.5 px-2 rounded-2xl border-2 border-[#7D141D] hover:border-[#FF1E27] text-[#FF1E27]"
+                                className=" font-semibold py-0.5 px-2 rounded-2xl hover:underline text-[#FF1E27] "
                             >
-                               <a href='https://api.zippopotam.us'> Know More!</a>
+                               <a href='https://api.zippopotam.us'> Know more</a>
                             </button>
                         </div>
                     </div>

@@ -6,13 +6,13 @@ const CountryToggle = ({ onToggle, show }) => {
   const { countryName, countryCode } = useSelector((state) => state.zipsearch)
 
   return (
-    <span className='flex bg-silver-gradient text-[#E6E7E8]/90 min-w-[1rem]  items-center justify-center rounded-full pr-2'>
+    <div className='flex bg-silver-gradient text-[#E6E7E8]/90 min-w-max items-center justify-center rounded-full pl-1 py-1 pr-3'>
       <button
         onClick={() => onToggle(prev => !prev)}
-        className='flex min-h-fit bg-[#020024] overflow-hidden active:bg-red-gradient-mid m-0.5 p-1.5 justify-between items-center w-56 rounded-full text-3xl/7 text-center'
+        className='flex min-h-fit bg-[#020024] overflow-hidden active:bg-red-gradient-mid mr-1 p-1.5 justify-between items-center w-[15rem] rounded-full text-2xl text-center'
       >
         <img src={LocationPinIcon} alt='click Globe Icon for select Country' width={22} height={22} />
-        <span className=''>Country</span>
+        <span className='min-w-max font-semibold'>Select Country</span>
         <img
           src={DownArrowIcon}
           alt='drown arrow'
@@ -24,7 +24,7 @@ const CountryToggle = ({ onToggle, show }) => {
         />
       </button>
       <span className='red-gradient-text font-bold text-2xl cursor-none' title={countryName}>{countryCode}</span>
-    </span>
+    </div>
   );
 };
 

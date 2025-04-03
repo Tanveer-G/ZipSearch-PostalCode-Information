@@ -48,8 +48,8 @@ export default function CountryDropdown() {
       <CountryToggle onToggle={setIsMenuShow} show={isMenuShow} />
 
       <menu
-        className={`absolute bg-silver-gradient text-[#E6E7E8]/90 z-20 px-1 py-1 mt-4 rounded-2xl origin-left-right bg-[#020024]/90 transition-all ease-in-out duration-300 delay-100  ${
-          isMenuShow ? 'translate-x-0' : '-translate-x-[200%]'
+        className={`absolute bg-silver-gradient text-[#E6E7E8]/90 z-20 px-1 py-1 mt-[18px] rounded-2xl origin-left-right bg-[#020024]/90 transition-all ease-in-out duration-300 delay-100  ${
+         isMenuShow ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
         }`}
       >
         <CountrySearchInput handleCountrySearch={handleCountrySearch} />

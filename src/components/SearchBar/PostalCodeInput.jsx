@@ -9,7 +9,7 @@ const PostalCodeInput = ({ handleInputChange, handleKeyDown, isInvalidInput, inp
   return (
     <div className='w-full flex h-full items-center'>
       <input
-        className={`bg-transparent lg:text-3xl w-full h-full overflow-hidden text-ellipsis whitespace-nowrap font-semibold outline-0 focus:outline-none placeholder:silver-gradient-text ${
+        className={`bg-transparent text-xl md:text-2xl w-full h-full overflow-hidden text-ellipsis whitespace-nowrap font-semibold outline-0 focus:outline-none placeholder:silver-gradient-text ${
           isInvalidInput ? 'red-gradient-text' : 'text-#E6E7E8'
         }`}
         aria-label={`Please enter a valid postal code of your selected country ${countryName}. This field is required.`}

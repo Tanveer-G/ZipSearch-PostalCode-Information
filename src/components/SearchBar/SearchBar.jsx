@@ -69,12 +69,11 @@ const SearchBar = () => {
   const isInvalidInput = input.length > 0 && !postalCodeRegex.test(input)
 
   return (
-    <div className=''>
+    <>
       <ValidSearch handleValidate={handleValidate} isInValid={isInValid} />
-      <div className='p-0.5 bg-silver-gradient rounded-full mt-4'>
-        <div className='w-full h-[3.7rem] md:h-[4.5rem] bg-[#020024] rounded-full text-center flex items-center justify-between'>
+      <div className='w-full p-1 bg-silver-gradient rounded-full'>
+        <div className='w-full flex items-center justify-between h-[3.7rem] md:h-16 bg-[#020024] rounded-full text-center gap-5 px-2'>
           <img src={LocationPinIcon} alt='click Globe Icon for select Country' width={25} height={25} className='ml-4 mr-[2px]' />
-
           <PostalCodeInput
             handleFocus={handleFocus}
             handleInputChange={handleInputChange}
@@ -87,7 +86,7 @@ const SearchBar = () => {
       </div>
       {isFocused && <History onSelectHistory={handleSelectHistory} />}
       {isLoading && <Loading />}
-    </div>
+    </>
   )
 }
 export default SearchBar

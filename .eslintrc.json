@@ -23,7 +23,7 @@
     },
     "plugins": ["react", "jsx-a11y", "prettier-plugin-tailwindcss"],
     "rules": {
-      "trailingComma": "es5",
+      "trailingComma": "es7",
       "semi": 1,
       "tabWidth": 2,
       "singleQuote": true,
